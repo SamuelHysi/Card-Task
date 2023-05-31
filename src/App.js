@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
 
 function App() {
+  const name = 'Samuel';
+  const surname = 'Hysi';
+  const city = 'Korce';
+  const birthday = '05/09/2000';
+  const description = 'My name is Samuel Hysi. I am 22 years old and I have recently finished my bachelor in Informatics. I really enjoy such things as sports, gaming, travelling and programming, especially in the front-end side. My goal is to be a senior ReactJs developer.'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Card name= {name} surname={surname} city={city} birthday={birthday} description={description}/>
   );
 }
 
